@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { default as RcForm, FieldContext } from "rc-field-form";
+import { default as RCForm, FieldContext } from "rc-field-form";
 
 import FormItem from "./FormItem";
 
@@ -17,7 +17,7 @@ const Form = ({
     ...props
 }) => {
     return (
-        <RcForm
+        <RCForm
             className={className}
             name={name}
             form={form}
@@ -32,7 +32,7 @@ const Form = ({
             {...props}
         >
             {children}
-        </RcForm>
+        </RCForm>
     );
 };
 

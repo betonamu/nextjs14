@@ -5,7 +5,6 @@ const FormItem = ({ name = "", children, ...props }) => {
     return (
         <Field name={name} {...props} validateTrigger={["onBlur", "onChange"]}>
             {(control, meta, form) => {
-                console.log({ meta });
                 return (
                     <div>
                         {React.cloneElement(children, {

@@ -1,12 +1,15 @@
-import { cookies } from "@/utils/cookies";
-import styles from "./page.module.scss";
-import Home from "@/components/Home";
-import { redirect } from "next/navigation";
+"use client";
 
-async function Page() {
+import Home from "@/components/Home";
+import useQueryParams from "@/hooks/useQueryParams";
+
+function Page() {
+    const [queryParams] = useQueryParams();
+    console.log({ queryParams });
+
     return (
         <>
-            <h1 style={{ color: styles.primaryColor }}>Hello, World!</h1>
+            <h1>Hello, World!</h1>
             <Home />
         </>
     );
