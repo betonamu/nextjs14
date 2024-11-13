@@ -1,6 +1,6 @@
 import ssrMode from "@/constants";
+import { redirect } from "next/navigation";
 import { deleteCookie } from "./cookies";
-import { redirect } from "next/dist/server/api-utils";
 
 export const logout = () => {
     deleteCookie("accessToken");

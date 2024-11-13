@@ -11,6 +11,7 @@ function Page() {
         <>
             <h1>Hello, World!</h1>
             <Home />
+            <iframe src="http://localhost:3000/app?id=1&series=series"/>
         </>
     );
 }
